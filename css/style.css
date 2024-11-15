@@ -1,0 +1,301 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+/* Common styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Color Variables */
+:root {
+    --base-bg-clr: #20262d;
+    --line-bg-clr: #3d465c;
+    --main-clr: #5d81ff;
+    --hover-clr: #222533;
+    --text-clr: #fff;
+    --err-clr: #c90d0d;
+    --secondary-text-clr: #b0b3c1;
+}
+
+body {
+  background-color: var(--base-bg-clr);
+  min-height: 100vh;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  /* Removed justify-content: space-between; */
+}
+
+
+  /* --------------------------------------------------Sidebar styles------------------------------------------- */
+  
+.sidebar {
+  position: fixed;
+  width: 300px;
+  height: calc(100vh - 32px);
+  background-color: var(--line-bg-clr);
+  border-radius: 16px;
+  margin: 16px;
+  padding: 10px;
+}
+
+.sidebar .sidebar-container {
+  height: 100%;
+    padding: 13px;
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    /* padding: 16px; */
+}
+
+.sidebar-header .logo {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.sidebar-header .logo .logo-icon img {
+  width: 70px;
+  height: 70px;
+}
+
+.sidebar-header .logo .logo-text {
+  font-size: 1.3rem;
+  font-weight: 550;   
+  color: var(--text-clr);
+}
+
+.sidebar-header .toggler {
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--line-bg-clr);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--text-clr);
+  border: none;
+  border-radius: 8px;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 180px);
+  padding: 16px;
+}
+
+
+.nav-options li {
+list-style: none;
+margin-top: 10px;
+}
+
+.nav-options li a {
+display: flex;
+align-items: center;
+text-decoration: none;
+list-style: none;
+display: flex;
+align-items: center;
+padding: 12px;
+border-radius: 8px;
+transition: background-color 0.3s ease;
+}
+
+.nav-options li a:hover {
+background-color:   var(--hover-clr);
+}
+  
+.sidebar .nav-container {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    width: 100%;
+    height: calc(100% - 200px);
+  }
+
+  .sidebar .options {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px
+  }
+  
+  .sidebar .options li {
+    list-style: none;
+    height: 50px;
+  }
+  
+  .sidebar .options li a {
+    gap: 10px;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 6px;
+    padding-left: 10px;
+    transition: all 0.4s ease;
+  }
+  
+  .sidebar .options li a:hover {
+    background-color:   var(--hover-clr);
+  }
+
+
+
+
+/* ===============================================response sidebar======================================*/
+
+@media screen and (max-width: 1456px){
+  
+}
+
+/* ------------------------------------------change-main style ---------------------------------------------------------*/
+
+
+.main-style {
+  margin-left: 350px; /* Adjust if needed */
+  height: calc(100vh - 42px); /* Ensures it fills the viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Adjustments for centering the container */
+}
+
+/* main img-downloader style */
+.container {
+  background-color: var(--line-bg-clr);
+  border-radius: 20px;
+  width: 500px;
+  padding: 20px;
+}
+.int {
+  width: 100%;
+  padding: 12px;
+  padding-left: 15px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+
+.container .para {
+  color: var(--err-clr);
+  text-align: center;
+  font-weight: 200;
+  margin-bottom: 10px;
+  display: none;
+  transition: all .4s ease-in-out;
+}
+.show {
+  color: var(--err-clr);
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 10px;
+  display: block;
+  transition: all .4s ease-in-out;
+}
+
+.main-btn {
+  margin-top: 5px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+
+.btn {
+  background-color: var(--base-bg-clr);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 15px;
+  text-align: center;
+  transition: all 0.4s ease;
+}
+
+.btn:hover {
+  background-color: var(--hover-clr);
+}
+
+/* calculator style */
+
+.calculator {
+  width: 320px;
+  margin: 50px auto;
+  background-color: var(--line-bg-clr);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+#display {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-align: right;
+  padding: 5px;
+  box-sizing: border-box;
+  color: var(--base-bg-clr);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+button {
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  background-color: var(--base-bg-clr);
+  cursor: pointer;
+  border-radius: 5px;
+  color: var(--text-clr);
+}
+
+button:hover {
+  background-color: var(--hover-clr);
+}
+
+button:active {
+  background-color: var(--line-bg-clr);
+}
+
+
+/* --------------------------------all-common style----------------------------------------- */
+
+li .icon {
+  margin-right: 15px;
+  font-size: 24px;
+  color: var(--text-clr);
+}
+
+li .text {
+  font-size: 1rem;
+  color: var(--text-clr);
+}
+
+a.active {
+background-color:  var(--hover-clr);
+color: #fff; 
+}
+
