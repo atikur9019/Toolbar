@@ -80,7 +80,7 @@ body {
   margin-left: 20px;
 }
 
-.sidebar-header .toggler {
+.sidebar-header .tog {
   height: 35px;
   width: 35px;
   display: flex;
@@ -183,7 +183,7 @@ background-color:   var(--hover-clr);
     height: 50px;
   }
 
-  .sidebar-header .toggler {
+  .sidebar-header .tog {
     display: none;
   }
 
@@ -230,7 +230,7 @@ background-color:   var(--hover-clr);
     height: 50px;
   }
 
-  .sidebar-header .toggler {
+  .sidebar-header .tog {
     margin-bottom: 20px;
   }
 
