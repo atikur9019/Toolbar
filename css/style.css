@@ -92,6 +92,7 @@ body {
   background-color: var(--text-clr);
   border: none;
   border-radius: 8px;
+  margin-bottom: 20px;
 }
 
 .sidebar-nav {
@@ -241,7 +242,7 @@ background-color:   var(--hover-clr);
   }
 
 
-  .sidebar .nav-container ul.options {
+  .sidebar nav.nav-container {
     background: var(--line-bg-clr);
     padding: 20px;
     border-radius: 8px;
@@ -401,3 +402,6 @@ background-color:  var(--hover-clr);
 color: #fff; 
 }
 
+.remove {
+  display: none;
+}
