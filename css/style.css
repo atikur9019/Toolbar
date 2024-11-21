@@ -108,7 +108,7 @@ list-style: none;
 margin-top: 10px;
 }
 
-.nav-options li nav {
+.nav-options li div {
 display: flex;
 align-items: center;
 text-decoration: none;
@@ -120,7 +120,7 @@ border-radius: 8px;
 transition: background-color 0.3s ease;
 }
 
-.nav-options li nav:hover {
+.nav-options li div:hover {
 background-color:   var(--hover-clr);
 }
   
@@ -147,7 +147,7 @@ background-color:   var(--hover-clr);
     cursor: pointer;
   }
   
-  .sidebar .options li nav {
+  .sidebar .options li div {
     gap: 10px;
     color: #fff;
     height: 100%;
@@ -160,7 +160,7 @@ background-color:   var(--hover-clr);
     transition: all 0.4s ease;
   }
   
-  .sidebar .options li nav:hover {
+  .sidebar .options li div:hover {
     background-color:   var(--hover-clr);
   }
 
@@ -189,6 +189,10 @@ background-color:   var(--hover-clr);
 
   .sidebar .nav-container {
     width: calc(100% - 5px);
+  }
+
+  li span.i-con {
+    font-size: 1.6rem;
   }
 
   .sidebar-container .text-remove {
@@ -356,7 +360,6 @@ background-color:   var(--hover-clr);
   text-align: right;
   padding: 5px;
   box-sizing: border-box;
-  color: var(--base-bg-clr);
 }
 
 .buttons {
@@ -397,7 +400,7 @@ li .text {
   color: var(--text-clr);
 }
 
-nav.active {
+div.active {
 background-color:  var(--hover-clr);
 color: #fff; 
 }
